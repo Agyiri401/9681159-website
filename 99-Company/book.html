@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title data-fr="Réservez maintenant | 968-1159 Canada Inc.">
+    Book Us Now | 968-1159 Canada Inc.
+  </title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+
+      <!-- CHANGE LOGO HERE -->
+      <a href="index.html">
+        <img
+          class="logo"
+          src="Comp-logo.png"
+          alt="968-1159 Canada Inc."
+        >
+      </a>
+
+      <label class="language-picker">
+        <img
+          class="flag-icon"
+          src="https://flagcdn.com/ca.svg"
+          alt="Canada flag"
+        >
+
+        <span class="sr-only">Language / Langue</span>
+
+        <select id="language-switcher">
+          <option value="en">English (Canada)</option>
+          <option value="fr">Français (Canada)</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="navigation-row">
+      <nav class="site-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="index.html" data-fr="Accueil">Home</a>
+
+          <a href="moving.html"
+             data-fr="Déménagement">Moving</a>
+
+          <a href="moving-freight.html"
+             data-fr="Transport de marchandises">Moving Freight</a>
+
+          <a href="junk-removal.html"
+             data-fr="Enlèvement des déchets">Junk Removal</a>
+
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <a class="book-now" href="book.html" aria-current="page"
+         data-fr="Réservez maintenant">
+        Book Us Now
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+
+      <!-- CHANGE BOOKING BACKGROUND IMAGE HERE -->
+      <img
+        class="hero-background"
+        src="https://static.vecteezy.com/system/resources/previews/021/389/114/non_2x/book-now-button-web-template-speech-bubble-banner-label-book-now-sign-icon-illustration-vector.jpg"
+        alt=""
+        aria-hidden="true"
+      >
+
+      <div class="hero-content">
+        <p class="eyebrow" data-fr="Réservez maintenant">
+          Book Us Now
+        </p>
+
+        <h1 data-fr="Parlez-nous de vos besoins.">
+          Tell us what you need.
+        </h1>
+
+        <p class="hero-description"
+           data-fr="Déménagement, transport de marchandises ou enlèvement de déchets : envoyez-nous votre demande.">
+          Moving, freight delivery, or junk removal—send us
+          your request.
+        </p>
+
+        <a class="button button-yellow" href="#request"
+           data-fr="Remplir le formulaire">
+          Complete the Form
+        </a>
+      </div>
+    </section>
+
+    <section class="section container booking-section" id="request">
+      <h2 data-fr="Demande de service">Service Request</h2>
+
+      <p data-fr="Remplissez le formulaire pour préparer votre demande. Nous discuterons ensuite des détails et des disponibilités.">
+        Complete the form to prepare your request. We will then
+        discuss the details and availability.
+      </p>
+
+      <form id="booking-form">
+        <label for="customer-name">
+          <span data-fr="Votre nom">Your Name</span>
+
+          <input
+            id="customer-name"
+            name="customerName"
+            type="text"
+            autocomplete="name"
+            required
+          >
+        </label>
+
+        <label for="customer-email">
+          <span data-fr="Votre courriel">Your Email</span>
+
+          <input
+            id="customer-email"
+            name="customerEmail"
+            type="email"
+            autocomplete="email"
+            required
+          >
+        </label>
+
+        <label for="customer-phone">
+          <span data-fr="Votre téléphone">Your Phone</span>
+
+          <input
+            id="customer-phone"
+            name="customerPhone"
+            type="tel"
+            autocomplete="tel"
+            required
+          >
+        </label>
+
+        <label for="service">
+          <span data-fr="Service demandé">Service Required</span>
+
+          <select id="service" name="service" required>
+            <option value="" data-fr="Choisissez un service">
+              Choose a service
+            </option>
+
+            <option value="Moving" data-fr="Déménagement">
+              Moving
+            </option>
+
+            <option value="Moving Freight"
+                    data-fr="Transport de marchandises">
+              Moving Freight
+            </option>
+
+            <option value="Junk Removal"
+                    data-fr="Enlèvement des déchets">
+              Junk Removal
+            </option>
+          </select>
+        </label>
+
+        <label for="preferred-date">
+          <span data-fr="Date souhaitée">Preferred Date</span>
+
+          <input
+            id="preferred-date"
+            name="preferredDate"
+            type="date"
+          >
+        </label>
+
+        <label for="location">
+          <span data-fr="Lieu ou adresse">Location or Address</span>
+
+          <input
+            id="location"
+            name="location"
+            type="text"
+          >
+        </label>
+
+        <label class="full-width" for="request-details">
+          <span data-fr="Décrivez votre demande">
+            Tell Us About Your Request
+          </span>
+
+          <textarea
+            id="request-details"
+            name="details"
+            rows="6"
+            required
+          ></textarea>
+        </label>
+
+        <button class="button button-yellow" type="submit"
+                data-fr="Préparer le courriel">
+          Prepare Email Request
+        </button>
+
+        <p class="form-note full-width"
+           data-fr="Ce bouton ouvre votre application de courriel avec la demande remplie. Appuyez sur Envoyer dans votre application pour la soumettre.">
+          This button opens your email app with your request filled in.
+          Press Send in your email app to submit it.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-content">
+      <div>
+        <h2>968-1159 Canada Inc.</h2>
+
+        <p data-fr="Appelez-nous ou envoyez une demande.">
+          Call us or send a request.
+        </p>
+      </div>
+
+      <div class="contact-details">
+        <a class="footer-phone" href="tel:+16473039701">
+          647-303-9701
+        </a>
+
+        <a href="mailto:CANINC9681159@hotmail.com">
+          CANINC9681159@hotmail.com
+        </a>
+      </div>
+    </div>
+
+    <p class="container copyright"
+       data-fr="© 2026 968-1159 Canada Inc. Tous droits réservés.">
+      © 2026 968-1159 Canada Inc. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>
